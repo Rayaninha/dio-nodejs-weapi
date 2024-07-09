@@ -28,3 +28,5 @@ return in a Rest API, the podcast name, videoId, episode name, cover image, link
   }
 ]
 ```
+
+#### filter episodes y podcast name
