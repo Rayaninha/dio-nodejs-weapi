@@ -14,5 +14,13 @@
     "thumbnail": "https://i.ytimg.com/vi/z4d_GyRz7eA/hqdefault.jpg",
     "link": "https://www.youtube.com/watch?v=z4d_GyRz7eA",
     "categories": ["politics"]
+  },
+  {
+    "podcastName": "Test",
+    "episode": "Test - Test #01",
+    "videoId": "test",
+    "thumbnail": "https://i.ytimg.com/vi/test/hqdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=test",
+    "categories": ["test"]
   }
 ]
