@@ -10,8 +10,10 @@ export const listEpisodes = async (
 ) => {
   const content = await serviceListEpisodes();
 
-  response.writeHead(StatusCode.OK, { "Content-Type": ContentType.JSON });
-  response.end(JSON.stringify(content));
+  response.writeHead(content.statusCode, { "Content-Type": ContentType.JSON });
+  response.write(JSON.stringify(content.body));
+
+  response.end();
 };
 
 export const filterEpisodes = async (
@@ -20,6 +22,8 @@ export const filterEpisodes = async (
 ) => {
   const content = await serviceFilterEpisodes(request.url);
 
-  response.writeHead(StatusCode.OK, { "Content-Type": ContentType.JSON });
-  response.end(JSON.stringify(content));
+  response.writeHead(content.statusCode, { "Content-Type": ContentType.JSON });
+  response.write(JSON.stringify(content.body));
+
+  response.end();
 };
